@@ -37,7 +37,6 @@ src_install() {
 	cd "${WORKDIR}/Logseq-linux-x64/"
 	doins -r "."
 	fperms +x "/opt/logseq/Logseq"
-	echo "${WORKDIR}"
 	cd "/opt/logseq"
 
 	dosym "/opt/logseq/Logseq" "/usr/bin/Logseq"
